@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ついったー</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <ul>
+      <li><%= link_to "ホーム", tweets_path %></li>
+      <li><a href="#">通知</a></li>
+      <li><a href="#">メッセージ</a></li>
+      <li class="right"><%= link_to "新規ツイート", new_tweet_path, class: 'btn btn-default' %></li>
+    </ul>
+    
+  
+  
+  </header>
+
+<%= yield %>
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>
